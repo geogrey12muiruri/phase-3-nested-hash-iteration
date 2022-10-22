@@ -19,6 +19,17 @@ end
 
 def remove_strawberry(contacts)
   # your code here!
+ 
+
+contacts.each do |person, data|
+  data.each do |attribute, value|
+    if attribute == :favorite_ice_cream_flavors
+      favorite_ice_cream_flavors.shift
+    end
+  end
+end
+
+favorite_ice_cream_flavors
 end
 
 # print the output to the terminal for inspection
